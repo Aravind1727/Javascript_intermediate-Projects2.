@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Nmae Generator</title>
+    <link rel="stylesheet" href="flgame.css">
+</head>
+<body>
+    <div class="container">
+        <!--gamw title-->
+        <h1 class="gameTitle">FLAMES</h1>
+        <!--game box-->
+        <div class="gameBox">
+            <!--input box-->
+            <div class="inputBox">
+                <input type="text" id="userName" 
+                onkeypress="return ((event.charCode >= 65 && event.charCode <= 90)
+                 || (event.charCode >= 97 && event.charCode <= 122))">
+                <label>ENTER YOUR NAME</label>
+            </div>
+              <!--input box-->
+              <div class="inputBox">
+                <input type="text" id="crushName" 
+                onkeypress="return ((event.charCode >= 65 && event.charCode <= 90)
+                 || (event.charCode >= 97 && event.charCode <= 122))">
+                <label>YOUR CRUSH NAME</label>
+            </div>
+        </div>
+        <!--button box-->
+        <div class="buttonBox">
+            <button id="checkMatchBtn">
+                <span>CHECK MATCH</span>
+              <!---loader gif-->  
+              <img src="loader.gif">
+            </button>
+            <button id="tryAgainBtn">
+                <span>Try Again</span>
+            </button>
+        </div>
+        <!--match result box-->
+        <div class="matchResultBox">
+        </div>
+
+    </div>
+
+    <script src="flgame.js"></script>
+</body>

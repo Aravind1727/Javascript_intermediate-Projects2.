@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day from date of birth</title>
+    </head>
+    <body>
+        <script >
+            var dob = prompt("Enter your date of birth ,Month DD, YYYY");
+            var day = new Date(dob).getDay();
+            switch(day)
+            {
+                case 0: document.write(<B>Sunday</B>)
+                       break;
+                case 1: document.write(<B>monday</B>)
+                       break;
+                case 2: document.write(<B>tuesday</B>)
+                       break;
+                case 3: document.write(<B>wednesay</B>)
+                    break;
+                case 4: document.write(<B>thursday</B>)
+                    break;
+                case 5: document.write(<B>friday</B>)
+                    break;
+                case 6: document.write(<B>Saturday</B>)
+                    break;
+                    default:
+                    document.write('PLEASE enter the data in given format');
+            }
+        </script>
+    </body>
+</html>
